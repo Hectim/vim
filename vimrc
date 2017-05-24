@@ -108,3 +108,4 @@ vmap <Leader>a<Bar>  :Tabularize /<Bar><CR>
 "  n... :  where to save the viminfo files
 set viminfo='100,\"1000,:200,%,n~/.viminfo
 autocmd FileType go setlocal shiftwidth=2 softtabstop=0 tabstop=2 noexpandtab
+autocmd! CursorHoldI * :stopinsert
