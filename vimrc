@@ -7,11 +7,11 @@ set clipboard=unnamed
 set encoding=utf8
 
 " vertical lines
- let g:indentLine_color_term = 239
- let g:indentLine_char = '|'
+let g:indentLine_color_term = 239
+let g:indentLine_char = '|'
 
 " gutter marks edits
- let g:gitgutter_max_signs = 1000
+let g:gitgutter_max_signs = 1000
 
 " color scheme
 set t_Co=256
@@ -22,7 +22,8 @@ syntax on
 " column width line
 set colorcolumn=120
 
-" line numbers
+" line numbers --- relative + current line
+set number
 set relativenumber
 
 " cursor
@@ -108,4 +109,3 @@ vmap <Leader>a<Bar>  :Tabularize /<Bar><CR>
 "  n... :  where to save the viminfo files
 set viminfo='100,\"1000,:200,%,n~/.viminfo
 autocmd FileType go setlocal shiftwidth=2 softtabstop=0 tabstop=2 noexpandtab
-autocmd! CursorHoldI * :stopinsert
